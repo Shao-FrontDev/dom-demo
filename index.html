@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Test</title>
+  </head>
+  <body>
+    <div id="test">
+      <div class="red">Hello world</div>
+      <div class="red">Hello world</div>
+      <div class="red">Hello world</div>
+      <div class="red">Hello world</div>
+    </div>
+    <div>
+      <button id="btn">
+        点击获取 dom.find('#test>.red')[0]
+      </button>
+    </div>
+    <div>
+      <button id="styleBtn">
+        设置('#test>.red')[0]为红色
+      </button>
+    </div>
+    <div>
+      <button id="btns">点击获取多个 div.red 元素</button>
+    </div>
+    <div>
+      <button id="log">将多个div.red 元素设置为绿色</button>
+    </div>
+    <textarea id="display" cols="30" rows="10"></textarea>
+    <script src="dom.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
