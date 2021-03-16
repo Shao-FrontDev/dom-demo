@@ -8,7 +8,7 @@ const red = dom.find(".red");
 
 //window.dom.className
 let { className } = dom;
-className.on(btn, "click", () => {
+dom.on(btn, "click", () => {
   let string = `查看控制台已经获取到了
 我将在3秒后消失`;
   dom.html(display, string);
@@ -18,12 +18,12 @@ className.on(btn, "click", () => {
   }, 3000);
 });
 
-className.on(styleBtn, "click", () => {
+dom.on(styleBtn, "click", () => {
   console.log(div);
   dom.style(div, "color", "red");
 });
 
-className.on(btns, "click", () => {
+dom.on(btns, "click", () => {
   let string = `查看控制台已经获取到了
 我将在3秒后消失`;
   dom.html(display, string);
@@ -33,7 +33,7 @@ className.on(btns, "click", () => {
   }, 3000);
 });
 
-className.on(log, "click", () => {
+dom.on(log, "click", () => {
   dom.each(red, (n) => {
     dom.style(n, "color", "green");
   });

@@ -90,9 +90,7 @@ window.dom = {
       }
     }
   },
-  find(string) {
-    return (node = document.querySelectorAll(string));
-  },
+
   each(nodeList, fn) {
     for (let i = 0; i < nodeList.length; i++) {
       fn.call(null, nodeList[i]);
@@ -116,7 +114,7 @@ window.dom = {
     node.removeEventListener(eventName, fn);
   },
   find(selector, scope) {
-    return (scope || selector).querySelectorAll(selector);
+    return (scope || document).querySelectorAll(selector);
   },
   parent(node) {
     return node.parentNode;
@@ -143,11 +141,7 @@ window.dom = {
     }
     return x;
   },
-  each(nodeList, fn) {
-    for (let i = 0; i < nodeList.length; i++) {
-      fn.call(nill, nodeList[i]);
-    }
-  },
+
   index(node) {
     const list = dom.children(node.parentNode);
     let i;
